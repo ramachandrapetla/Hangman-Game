@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651F559D28EE738A008CF0C5 /* GuessWordCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F559C28EE738A008CF0C5 /* GuessWordCRUD.swift */; };
+		6525F3072900D47D00CDD47A /* Easy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6525F3062900D47D00CDD47A /* Easy.plist */; };
+		6525F3092900D49000CDD47A /* Hard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6525F3082900D49000CDD47A /* Hard.plist */; };
+		6525F30B2900D49600CDD47A /* Medium.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6525F30A2900D49600CDD47A /* Medium.plist */; };
+		65AD012E28E53A40006BF101 /* SinglePlayerTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AD012D28E53A40006BF101 /* SinglePlayerTableVC.swift */; };
 		65E760A228D2C14200ACD758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E760A128D2C14200ACD758 /* AppDelegate.swift */; };
 		65E760A428D2C14200ACD758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E760A328D2C14200ACD758 /* SceneDelegate.swift */; };
-		65E760A628D2C14200ACD758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E760A528D2C14200ACD758 /* ViewController.swift */; };
 		65E760A928D2C14200ACD758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E760A728D2C14200ACD758 /* Main.storyboard */; };
 		65E760AC28D2C14200ACD758 /* Hangman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65E760AA28D2C14200ACD758 /* Hangman.xcdatamodeld */; };
 		65E760AE28D2C14300ACD758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E760AD28D2C14300ACD758 /* Assets.xcassets */; };
 		65E760B128D2C14300ACD758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E760AF28D2C14300ACD758 /* LaunchScreen.storyboard */; };
+		65E760C328D2C3DF00ACD758 /* DoublePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E760C228D2C3DF00ACD758 /* DoublePlayerVC.swift */; };
+		65E760C528D2C3F100ACD758 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E760C428D2C3F100ACD758 /* GameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		651F559C28EE738A008CF0C5 /* GuessWordCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWordCRUD.swift; sourceTree = "<group>"; };
+		6525F3062900D47D00CDD47A /* Easy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Easy.plist; sourceTree = "<group>"; };
+		6525F3082900D49000CDD47A /* Hard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Hard.plist; sourceTree = "<group>"; };
+		6525F30A2900D49600CDD47A /* Medium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Medium.plist; sourceTree = "<group>"; };
+		65AD012D28E53A40006BF101 /* SinglePlayerTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerTableVC.swift; sourceTree = "<group>"; };
 		65E7609E28D2C14200ACD758 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E760A128D2C14200ACD758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E760A328D2C14200ACD758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65E760A528D2C14200ACD758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65E760A828D2C14200ACD758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65E760AB28D2C14200ACD758 /* Hangman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hangman.xcdatamodel; sourceTree = "<group>"; };
 		65E760AD28D2C14300ACD758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E760B028D2C14300ACD758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E760B228D2C14300ACD758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E760C228D2C3DF00ACD758 /* DoublePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublePlayerVC.swift; sourceTree = "<group>"; };
+		65E760C428D2C3F100ACD758 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,54 @@
 		65E760A028D2C14200ACD758 /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
-				65E760A128D2C14200ACD758 /* AppDelegate.swift */,
-				65E760A328D2C14200ACD758 /* SceneDelegate.swift */,
-				65E760A528D2C14200ACD758 /* ViewController.swift */,
+				65E760BC28D2C26C00ACD758 /* Models */,
+				65E760BB28D2C26200ACD758 /* ViewControllers */,
+				65E760B928D2C23D00ACD758 /* Images */,
+				65E760B828D2C1F600ACD758 /* Delegates */,
 				65E760A728D2C14200ACD758 /* Main.storyboard */,
 				65E760AD28D2C14300ACD758 /* Assets.xcassets */,
 				65E760AF28D2C14300ACD758 /* LaunchScreen.storyboard */,
 				65E760B228D2C14300ACD758 /* Info.plist */,
-				65E760AA28D2C14200ACD758 /* Hangman.xcdatamodeld */,
 			);
 			path = Hangman;
+			sourceTree = "<group>";
+		};
+		65E760B828D2C1F600ACD758 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				65E760A128D2C14200ACD758 /* AppDelegate.swift */,
+				65E760A328D2C14200ACD758 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		65E760B928D2C23D00ACD758 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		65E760BB28D2C26200ACD758 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65AD012D28E53A40006BF101 /* SinglePlayerTableVC.swift */,
+				65E760C228D2C3DF00ACD758 /* DoublePlayerVC.swift */,
+				65E760C428D2C3F100ACD758 /* GameVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65E760BC28D2C26C00ACD758 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6525F3062900D47D00CDD47A /* Easy.plist */,
+				6525F30A2900D49600CDD47A /* Medium.plist */,
+				6525F3082900D49000CDD47A /* Hard.plist */,
+				65E760AA28D2C14200ACD758 /* Hangman.xcdatamodeld */,
+				651F559C28EE738A008CF0C5 /* GuessWordCRUD.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +178,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6525F3092900D49000CDD47A /* Hard.plist in Resources */,
 				65E760B128D2C14300ACD758 /* LaunchScreen.storyboard in Resources */,
 				65E760AE28D2C14300ACD758 /* Assets.xcassets in Resources */,
+				6525F3072900D47D00CDD47A /* Easy.plist in Resources */,
 				65E760A928D2C14200ACD758 /* Main.storyboard in Resources */,
+				6525F30B2900D49600CDD47A /* Medium.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E760A628D2C14200ACD758 /* ViewController.swift in Sources */,
+				651F559D28EE738A008CF0C5 /* GuessWordCRUD.swift in Sources */,
 				65E760A228D2C14200ACD758 /* AppDelegate.swift in Sources */,
+				65E760C328D2C3DF00ACD758 /* DoublePlayerVC.swift in Sources */,
 				65E760AC28D2C14200ACD758 /* Hangman.xcdatamodeld in Sources */,
+				65E760C528D2C3F100ACD758 /* GameVC.swift in Sources */,
+				65AD012E28E53A40006BF101 /* SinglePlayerTableVC.swift in Sources */,
 				65E760A428D2C14200ACD758 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5RJT5795Z2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hangman/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,6 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5RJT5795Z2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hangman/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
