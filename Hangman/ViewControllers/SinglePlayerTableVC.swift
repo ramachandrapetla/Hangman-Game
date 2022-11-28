@@ -9,8 +9,8 @@ import UIKit
 
 class SinglePlayerTableVC: UITableViewController {
 
-    var dataArray: [String] = ["Easy", "Medium", "Difficult"]
-    
+    var dataArray: [String] = ["Easy", "Medium", "Hard"]
+    var guessWord:String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +26,17 @@ class SinglePlayerTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    func loadWordsIntoDatabase(plistName:String) {
+        if GuessWordCRUD.read(category: plistName) == nil {
+            if let URL = Bundle.main.url(forResource: plistName, withExtension: "plist") {
+                if let wordsArray = NSArray(contentsOf: URL) as? [String] {
+                    for word in wordsArray {
+                        GuessWordCRUD.create(newWord: word, newCategory: plistName)
+                    }
+                }
+            }
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,17 +58,14 @@ class SinglePlayerTableVC: UITableViewController {
         return cell
     }
     
-    func loadWordsIntoDatabase(plistName:String) {
-        if GuessWordCRUD.read(category: plistName) == nil {
-            if let URL = Bundle.main.url(forResource: plistName, withExtension: "plist") {
-                if let wordsArray = NSArray(contentsOf: URL) as? [String] {
-                    for word in wordsArray {
-                        GuessWordCRUD.create(newWord: word, newCategory: plistName)
-                    }
-                }
-            }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guessWord = GuessWordCRUD.read(category: dataArray[indexPath.row])
+        if let wordToDelete = guessWord {
+            GuessWordCRUD.delete(oldWord: wordToDelete)
+            performSegue(withIdentifier: "singleplayer-game", sender: self)
         }
     }
+    
 
 
     /*
@@ -95,14 +103,21 @@ class SinglePlayerTableVC: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "singleplayer-game" {
+            if let gameVC = segue.destination as? GameVC {
+                if let enteredText = guessWord {
+                    gameVC.guessWord = enteredText
+                }
+            }
+        }
+
     }
-    */
+
+    
 
 }
